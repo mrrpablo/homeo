@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 2.5% 2%;
+}
+
+main{
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #eee;
+    padding-right: 5%;
+}
+
+.side-bar{
+    height: 100%;
+    width: 17%;
+    background-color: #eee;
+    overflow-y: hidden;
+}
+
+.search{
+    display: flex;
+}
+
+
+
+.search form{
+    display: flex;
+    height: 45px;
+    border: 2px solid #eee;
+    border-radius: 7px;
+}
+
+.search input{
+    width: 600px;
+    padding: 10px;
+    border: 0;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #eee;
+}
+
+.search button{
+    height: 100%;
+    width: 60px;
+    border: none;
+    background-color: #fff;
+}
+
+.icons{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.icons i{
+    font-size: 30px;
+}
+
+
+.right-text{
+    font-weight: 200;
+    font-size: 13px;
+    margin-bottom: 70px;
+    
+}
+
+.right-text p{
+    color: black;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.right-text span{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 4%;
+}
+
+i{
+    color: black;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.nav-link span {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    background-color: rgb(16, 142, 214);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.nav h6{
+    padding-top: 35px;
+    padding-left: 40px;
+}
+
+hr{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border: none;
+    margin-top: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100px;
+}
+
+.content{
+    display: block;
+    justify-content: space-between;
+    width: 83%;
+    padding-top: 50px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sitting-room{
+    background-image: url(./images/derick-mckinney-zYDMzAuxs9Q-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    /* height: 150px; */
+}
+
+.hover-content{
+    display: none;
+    background-color: rgb(12, 125, 160);
+    font-weight: 400;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    border-radius: 10px;
+    opacity: 90%;
+}
+
+.hover-content h6{
+    margin: 10px 20px;
+}
+
+.hover-content li{
+    margin: 3px 20px;
+}
+
+.sitting-room:hover .hover-content{
+    display: block;
+    cursor: pointer;
+}
+
+.bedroom{
+    background-image: url(./images/chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    /* height: 100px; */
+}
+
+
+.sitting-room,
+.bedroom,
+.room{
+    width: 49%;
+    height: 300px;
+    border-radius: 20px;
+    
+}
+
+.room{
+  border: 2px solid black;
+  height: 300px;
+  background-color: #eee;
+}
+
+.sitting-room{
+    width: 100%;
+    padding: 0;
+    height: 250px;
+    position: relative;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.room p{
+    color: black;
+    margin-bottom: 8px;
+}
+
+.bedroom{
+    height: 285px;
+    margin-top: 1%;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+    
+}
+
+.bathroom{
+    background-image: url(./images/christian-mackie-6BJu73-UJpg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    border-radius: 10px;
+}
+.toilet{
+    background-image: url(./images/99-films-48mTwDzizqE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.kitchen{
+    background-image: url(./images/christian-mackie-cc0Gg3BegjE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.surrounding{
+    background-image: url(./images/atikah-akhtar-stREw6BF8mE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.box1{
+    width: 32%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+p{
+    color: #fff;
+    font-weight: 700;
+    padding-left: 2%;
+    padding-top: 20px;
+   
+}
+
+@media only screen and (max-width: 768px){
+    .search{
+        display: none;
+    }
+
+    main{
+        height: 220vh;
+    }
+
+    .right{
+        margin-top: 50px;
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .first-row{
+        display: block;
+       
+    }
+
+    .room,
+    .bedroom{
+        width: 100%;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+
+    .second-row{
+        display: block;
+    }
+
+    .box1{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+}
+
